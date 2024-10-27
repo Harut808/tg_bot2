@@ -29,15 +29,15 @@ bot.on('message', async (ctx) => {
         ctx.reply(`Country: ${res.data.sys.country}\nCity: ${res.data.name}\nTemp: ${Math.round(res.data.main.temp - 273.15)}°C`);
     }
 });
-
-// Запуск бота
-bot.launch();
 const server = express()
 server.get("/",(req,res)=>{
     res.json("yey")
 })
 
 server.listen(8000)
+// Запуск бота
+bot.launch();
+
 
 
 
