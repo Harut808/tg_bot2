@@ -24,7 +24,7 @@ bot.on('message', async (ctx) => {
 
     if (ctx.message.location) {
         const url = `https://api.openweathermap.org/data/2.5/weather?lat=${ctx.message.location.latitude}&lon=${ctx.message.location.longitude}&appid=7515e331bcc097bc94dc75aad7347422`;
-        const res = await axios.get(url);
+        const res = await expres.get(url);
 
         ctx.reply(`Country: ${res.data.sys.country}\nCity: ${res.data.name}\nTemp: ${Math.round(res.data.main.temp - 273.15)}°C`);
     }
