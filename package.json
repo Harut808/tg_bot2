@@ -2,12 +2,12 @@
   "name": "my-telegram-bot",
   "version": "1.0.0",
   "description": "A bot to get weather data from location",
-  "main": "app.js",  // или название вашего основного файла
+  "main": "app.js", 
   "scripts": {
-    "start": "node app.js"  // здесь указывается файл, который нужно запустить
+    "start": "node app.js" 
   },
   "dependencies": {
-    "telegraf": "^4.6.0",  // пример, зависимости, которые нужны вашему проекту
+    "telegraf": "^4.6.0", 
     "axios": "^1.2.0",
     "express": "^4.18.0"
   },
